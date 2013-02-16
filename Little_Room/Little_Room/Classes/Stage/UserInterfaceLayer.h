@@ -12,6 +12,8 @@
 #include <iostream>
 #include "cocos2d.h"
 #include "PlayerModel.h"
+
+using namespace cocos2d;
 class UserInterfaceLayer:cocos2d::CCLayer
 {
     PlayerModel* player ;
@@ -33,5 +35,12 @@ public:
     void setUserOmenBox();                  //设置预兆卡片界面
     void setPlayerStatus();                 //设置玩家状态界面
     void setPlayerOtherBox();               //设置玩家其他信息界面（主要是当了奸徒以后
+    
+#pragma makr -methods for touch dispatcher
+    virtual void registerWithTouchDispatcher(void);
+    
+    virtual bool ccTouchBegan(CCTouch *pTouch, CCEvent *pEvent);
+    virtual void ccTouchesBegan(CCSet* touches,CCEvent* pEvent);
+    virtual void ccTouchesMove(CCSet* touches, CCEvent* pEvent);
 };
 #endif /* defined(__Little_Room__UserInterfaceLayer__) */

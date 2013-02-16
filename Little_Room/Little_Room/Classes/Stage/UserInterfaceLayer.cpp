@@ -52,3 +52,15 @@ bool UserInterfaceLayer::setViewWithPlayerType(PlayerModel *player)
     //3. 设置玩家类型设置具体操作界面
     return true;
 }
+
+void UserInterfaceLayer::registerWithTouchDispatcher()
+{
+    CCDirector::sharedDirector()->getTouchDispatcher()->addTargetedDelegate(this, 2, true);
+}
+
+bool UserInterfaceLayer::ccTouchBegan(cocos2d::CCTouch *pTouch, cocos2d::CCEvent *pEvent)
+{
+    bool touchHandel= false;
+    
+    return touchHandel;
+}

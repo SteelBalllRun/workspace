@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		01985B6C16CC80F70079B10B /* GameController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 01985B6A16CC80F70079B10B /* GameController.cpp */; };
 		019B0E8C16CB518F00E2A118 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 019B0E8B16CB518F00E2A118 /* QuartzCore.framework */; };
 		019B0E8E16CB518F00E2A118 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 019B0E8D16CB518F00E2A118 /* OpenGLES.framework */; };
 		019B0E9016CB518F00E2A118 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 019B0E8F16CB518F00E2A118 /* OpenAL.framework */; };
@@ -209,10 +210,15 @@
 		019B113E16CB519300E2A118 /* HelloWorldScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 019B113D16CB519300E2A118 /* HelloWorldScene.cpp */; };
 		019B116216CB537100E2A118 /* UserInterfaceLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 019B116016CB537100E2A118 /* UserInterfaceLayer.cpp */; };
 		019B117A16CBD0B300E2A118 /* GameLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 019B117816CBD0B300E2A118 /* GameLayer.cpp */; };
-		019B117D16CBD99500E2A118 /* BlockModel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 019B117B16CBD99500E2A118 /* BlockModel.cpp */; };
+		019C97A916CE2269006370E7 /* ThrowDices.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 019C97A716CE2269006370E7 /* ThrowDices.cpp */; };
+		019C97AD16CE251D006370E7 /* CardDeck.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 019C97AB16CE251D006370E7 /* CardDeck.cpp */; };
+		019C97B016CE2526006370E7 /* BlockDeck.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 019C97AE16CE2526006370E7 /* BlockDeck.cpp */; };
+		019C97B916CE340A006370E7 /* ShuffleMethod.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 019C97B716CE340A006370E7 /* ShuffleMethod.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		01985B6A16CC80F70079B10B /* GameController.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameController.cpp; sourceTree = "<group>"; };
+		01985B6B16CC80F70079B10B /* GameController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameController.h; sourceTree = "<group>"; };
 		019B0E8716CB518F00E2A118 /* Little_Room.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Little_Room.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		019B0E8B16CB518F00E2A118 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		019B0E8D16CB518F00E2A118 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
@@ -658,8 +664,17 @@
 		019B116816CB670400E2A118 /* PlayerModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerModel.h; sourceTree = "<group>"; };
 		019B117816CBD0B300E2A118 /* GameLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameLayer.cpp; sourceTree = "<group>"; };
 		019B117916CBD0B300E2A118 /* GameLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameLayer.h; sourceTree = "<group>"; };
-		019B117B16CBD99500E2A118 /* BlockModel.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BlockModel.cpp; sourceTree = "<group>"; };
 		019B117C16CBD99500E2A118 /* BlockModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlockModel.h; sourceTree = "<group>"; };
+		019C97A716CE2269006370E7 /* ThrowDices.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ThrowDices.cpp; sourceTree = "<group>"; };
+		019C97A816CE2269006370E7 /* ThrowDices.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThrowDices.h; sourceTree = "<group>"; };
+		019C97AB16CE251D006370E7 /* CardDeck.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CardDeck.cpp; sourceTree = "<group>"; };
+		019C97AC16CE251D006370E7 /* CardDeck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardDeck.h; sourceTree = "<group>"; };
+		019C97AE16CE2526006370E7 /* BlockDeck.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BlockDeck.cpp; sourceTree = "<group>"; };
+		019C97AF16CE2526006370E7 /* BlockDeck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlockDeck.h; sourceTree = "<group>"; };
+		019C97B216CE25F0006370E7 /* CardModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardModel.h; sourceTree = "<group>"; };
+		019C97B516CE2A5A006370E7 /* BlockMark.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlockMark.h; sourceTree = "<group>"; };
+		019C97B716CE340A006370E7 /* ShuffleMethod.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ShuffleMethod.cpp; sourceTree = "<group>"; };
+		019C97B816CE340A006370E7 /* ShuffleMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShuffleMethod.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1615,6 +1630,12 @@
 				019B116116CB537100E2A118 /* UserInterfaceLayer.h */,
 				019B117816CBD0B300E2A118 /* GameLayer.cpp */,
 				019B117916CBD0B300E2A118 /* GameLayer.h */,
+				01985B6A16CC80F70079B10B /* GameController.cpp */,
+				01985B6B16CC80F70079B10B /* GameController.h */,
+				019C97AB16CE251D006370E7 /* CardDeck.cpp */,
+				019C97AC16CE251D006370E7 /* CardDeck.h */,
+				019C97AE16CE2526006370E7 /* BlockDeck.cpp */,
+				019C97AF16CE2526006370E7 /* BlockDeck.h */,
 			);
 			name = Stage;
 			path = Classes/Stage;
@@ -1623,6 +1644,10 @@
 		019B115C16CB529700E2A118 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				019C97A716CE2269006370E7 /* ThrowDices.cpp */,
+				019C97A816CE2269006370E7 /* ThrowDices.h */,
+				019C97B716CE340A006370E7 /* ShuffleMethod.cpp */,
+				019C97B816CE340A006370E7 /* ShuffleMethod.h */,
 			);
 			name = Tools;
 			path = Classes/Tools;
@@ -1632,8 +1657,9 @@
 			isa = PBXGroup;
 			children = (
 				019B116816CB670400E2A118 /* PlayerModel.h */,
-				019B117B16CBD99500E2A118 /* BlockModel.cpp */,
 				019B117C16CBD99500E2A118 /* BlockModel.h */,
+				019C97B216CE25F0006370E7 /* CardModel.h */,
+				019C97B516CE2A5A006370E7 /* BlockMark.h */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -1899,7 +1925,11 @@
 				019B113E16CB519300E2A118 /* HelloWorldScene.cpp in Sources */,
 				019B116216CB537100E2A118 /* UserInterfaceLayer.cpp in Sources */,
 				019B117A16CBD0B300E2A118 /* GameLayer.cpp in Sources */,
-				019B117D16CBD99500E2A118 /* BlockModel.cpp in Sources */,
+				01985B6C16CC80F70079B10B /* GameController.cpp in Sources */,
+				019C97A916CE2269006370E7 /* ThrowDices.cpp in Sources */,
+				019C97AD16CE251D006370E7 /* CardDeck.cpp in Sources */,
+				019C97B016CE2526006370E7 /* BlockDeck.cpp in Sources */,
+				019C97B916CE340A006370E7 /* ShuffleMethod.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
