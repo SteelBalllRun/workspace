@@ -10,5 +10,11 @@
 #define __Little_Room__ShuffleMethod__
 
 #include <iostream>
-
+#include "cocos2d.h"
+using namespace cocos2d;
+class ShuffleMethod:public cocos2d::CCObject
+{
+public:
+    static void ShuffleCards(CCArray *& card_deck);
+};
 #endif /* defined(__Little_Room__ShuffleMethod__) */

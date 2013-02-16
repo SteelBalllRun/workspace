@@ -11,6 +11,16 @@
 
 #include <iostream>
 #include "cocos2d.h"
+typedef enum
+{
+    DIRECTION_0,
+    DIRECTION_45,
+    DIRECTION_90,
+    DIRECTION_135,
+    DIRECTION_180
+}BlockDirection;
+
+
 class Position
 {
     int location_x;
@@ -33,6 +43,7 @@ class BlockModel:cocos2d::CCObject
     int block_id;
     bool covered;
     Position* _pos;
+    BlockDirection block_direction;
 public:
     inline bool getIsCovered(){return covered;}
 };
